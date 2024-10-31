@@ -27,7 +27,7 @@ interface BasicUserInfo {
   /**
    * 用户名
    */
-  username: string;
+  userName: string;
 }
 
 export type { BasicOption, BasicUserInfo, SelectOption, TabOption };
