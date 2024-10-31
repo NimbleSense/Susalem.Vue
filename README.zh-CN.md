@@ -11,6 +11,8 @@
 
 ## 简介
 
+本项目的前端是基于vue vben的。只是增加了一些业务代码，所以有前端方面的问题，可以联系susalem的开发人员，也可也直接联系vue vben的开发人员。
+以下皆为vue vben的原readme。
 Vue Vben Admin 是 Vue Vben Admin 的升级版本。作为一个免费开源的中后台模板，它采用了最新的 Vue 3、Vite、TypeScript 等主流技术开发，开箱即用，可用于中后台前端开发，也适合学习参考。
 
 ## 升级提示
