@@ -21,7 +21,7 @@ interface BasicUserInfo {
   /**
    * 用户名
    */
-  username: string;
+  userName: string;
 }
 
 interface AccessState {
