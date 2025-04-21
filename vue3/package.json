@@ -90,6 +90,7 @@
     "turbo": "catalog:",
     "typescript": "catalog:",
     "unbuild": "catalog:",
+    "unplugin-vue-components": "^28.5.0",
     "vite": "catalog:",
     "vitest": "catalog:",
     "vue": "catalog:",
@@ -116,5 +117,8 @@
       "canvas",
       "node-gyp"
     ]
+  },
+  "dependencies": {
+    "vuedraggable": "^4.1.0"
   }
 }
