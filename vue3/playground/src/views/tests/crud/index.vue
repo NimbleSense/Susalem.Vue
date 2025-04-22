@@ -78,26 +78,8 @@ const formState = ref<TestData>({
     address: '',
     tags: [],
 })
-const deleteData=async(id:number)=>{
-    await deleteTestData(id);
-    await refreshTable()
-}
 const open = ref<boolean>(false)
-const onOk = async () => {
-    await createTestData(formState.value);
-    await refreshTable()
-    open.value = false
-}
-const showModal = () => {
-    open.value = true
-}
-const refreshTable = async () => {
-    const res = await getTestDatas();
-
-    console.log('res', res)
-    data.value = [...res]
-}
-const columns = [
+    const columns = [
     {
         name: 'Name',
         dataIndex: 'name',
@@ -122,9 +104,26 @@ const columns = [
         title: 'Action',
         key: 'action',
     },
-];
+]
 
 
 
-onMounted(refreshTable)
+const showModal = () => {
+    open.value = true
+}
+// const onOk = async () => {
+//     await createTestData(formState.value);
+//     await refreshTable()
+//     open.value = false
+// }
+// const deleteData=async(id:number)=>{
+//     await deleteTestData(id);
+//     await refreshTable()
+// }
+// const refreshTable = async () => {
+//     const res = await getTestDatas();
+//     data.value = [...res]
+// }
+
+// onMounted(()=>refreshTable)
 </script>

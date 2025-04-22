@@ -13,13 +13,13 @@ const routes: RouteRecordRaw[] = [
     path: '/',
     children:[
       {
-        name:'ApiTest',
-        path:'/apitest',
-        component: () => import('#/views/tests/apiTest/index.vue'),
+        name:'CrudTest',
+        path:'/crud',
+        component: () => import('#/views/tests/crud/index.vue'),
         meta: {
           affixTab: true,
           icon: 'mdi:home',
-          title: 'Api Test',
+          title: 'Crud Test',
         },
       },
       {
